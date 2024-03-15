@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>YouTube</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    #sidebar {
+      height: 100vh;
+      color: #ffffff;
+      background-color:grey;
+    }
+
+    #sidebar a {
+      color: #ffffff;
+    }
+
+    #sidebar .nav-item.active {
+      background-color: #333333;
+    }
+
+    .container-fluid .btn1{
+      width:100%;
+      margin-top:0;
+      border:1px solid;
+      padding:1px;
+
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="image/youtube.jpeg" alt="Your Logo" width="120" height="30">YouTube</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Search Bar -->
+        <form class="form-inline ml-auto">
+          <div class="input-group ">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+
+        </form>
+
+
+        <!-- Voice Search Icon -->
+
+
+        <button class="btn btn-outline-secondary ml-2"><i class="fas fa-microphone"></i></button>
+
+        <!-- Settings Icon -->
+        <button class="btn btn-outline-secondary ml-2"><i class="fas fa-cog"></i></button>
+        <!-- Signup Icon -->
+        <button class="btn btn-outline-secondary ml-2"><i class="fas fa-user-plus"></i></button>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Side Navbar -->
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-md-2">
+        <nav id="sidebar">
+
+          <ul class="list-unstyled components">
+            <li class="btn1 btn-dark active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-fire"></i> Trending</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-layer-group"></i> Subscriptions</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-user"></i> You</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-history"></i> History</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-sign-in-alt"></i> Sign in</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-compass"></i> Explore</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-shopping-bag"></i> Shopping</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-music"></i> Music</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-film"></i> Films</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-video"></i> Live</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-gamepad"></i> Gaming</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-graduation-cap"></i> Learning</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-tshirt"></i> Fashion &amp; beauty</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-podcast"></i> Podcasts</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-stream"></i> Browse channels</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-ellipsis-h"></i> More from YouTube</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-gem"></i> YouTube Premium</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-music"></i> YouTube Music</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-child"></i> YouTube Kids</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-history"></i> Report history</a></li>
+            <li class="btn1 btn-dark"><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+            <li class="btn1 btn-primary"><a href="#"><i class="fas fa-comment-alt"></i> Send feedback</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <!-- Filter Videos Button -->
+  <div class="container mt-4">
+    <button class="btn btn-grey" id="filterVideosBtn">All</button>
+    <button class="btn btn-gray" id="filterVideosBtn">Music</button>
+    <button class="btn btn-grey" id="filterVideosBtn">Songs</button>
+    <button class="btn btn-gray" id="filterVideosBtn">Live</button>
+    <button class="btn btn-grey" id="filterVideosBtn">News</button>
+    <button class="btn btn-gray" id="filterVideosBtn">Movies</button>
+    <button class="btn btn-grey" id="filterVideosBtn">Related Update</button>
+    <button class="btn btn-gray" id="filterVideosBtn">New to you</button>
+    <button class="btn btn-grey" id="filterVideosBtn">India Song</button>
+    <button class="btn btn-gray" id="filterVideosBtn">NEET</button>
+    <button class="btn btn-grey" id="filterVideosBtn">Watched</button>
+    <button class="btn btn-gray" id="filterVideosBtn">Recently Upload</button>
+
+
+  </div>
+  <!-- Video Card Section -->
+    <div class="container mt-4">
+      <div class="row">
+
+        <!-- Video Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="image/t.jpeg" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Video Title 1</h5>
+              <p class="card-text">Description for Video 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="image/t1.jpeg" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Video Title 2</h5>
+              <p class="card-text">Description for Video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="image/t3.jpeg" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Video Title 3</h5>
+              <p class="card-text">Description for Video 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Watch Video</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    !-- Video Card Section -->
+      <div class="container mt-4">
+        <div class="row">
+
+          <!-- Video Card 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="image/t6.jpeg" class="card-img-top" alt="Video Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Video Title 1</h5>
+                <p class="card-text">Description for Video 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-primary">Watch Video</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="image/t7.jpeg" class="card-img-top" alt="Video Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Video Title 2</h5>
+                <p class="card-text">Description for Video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-primary">Watch Video</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="image/t8.jpeg" class="card-img-top" alt="Video Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Video Title 3</h5>
+                <p class="card-text">Description for Video 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-primary">Watch Video</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      !-- Video Card Section -->
+        <div class="container mt-4">
+          <div class="row">
+
+            <!-- Video Card 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="image/t11.jpeg" class="card-img-top" alt="Video Thumbnail">
+                <div class="card-body">
+                  <h5 class="card-title">Video Title 1</h5>
+                  <p class="card-text">Description for Video 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">Watch Video</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="image/t14.jpeg" class="card-img-top" alt="Video Thumbnail">
+                <div class="card-body">
+                  <h5 class="card-title">Video Title 2</h5>
+                  <p class="card-text">Description for Video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">Watch Video</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="image/t13.jpeg" class="card-img-top" alt="Video Thumbnail">
+                <div class="card-body">
+                  <h5 class="card-title">Video Title 3</h5>
+                  <p class="card-text">Description for Video 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="btn btn-primary">Watch Video</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Include Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+      document.getElementById('filterVideosBtn').addEventListener('click', function () {
+        // You can replace the alert with your video filtering logic
+        alert('Filtering videos...');
+        // Add your custom filtering logic here
+      });
+    </script>
+</body>
+
+</html>
